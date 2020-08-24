@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chess</title>
+    <link rel="stylesheet" href="css/chessboard-1.0.0.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="js/chessboard-1.0.0.min.js"></script>
+    <script src="js/chess.js"></script>
+    <style>
+      .main{
+        padding: 5%;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <h1>Minimax with Alpha Beta Pruning Chess AI</h1>
+      <br/>
+      <div id="board1" style="width: 500px"></div>
+      
+      <button onClick="window.location.reload();">Restart</button>
+      <br/>
+      <div class="info">
+        Select Difficulty:
+        <select id="search-depth">
+            <option value="2">Normal</option>
+            <option value="3" selected>Hard</option>
+            <option value="4">Super Hard</option>
+            <option value="5">Super Duper Hard</option>
+        </select>
+        Note: You have to press the button after selecting the difficulty
+        </div>
+        <br/>
+        <button onClick="UpdatedDifficulty()">Update Difficulty</button>
+        
+        <p id="result">Current Difficulty: Hard</p>
+        
+        
+      <label>Status:</label>
+      <div id="status"></div>
+    </div>
+    
+<script src="./index.js"></script>
+
+
+</body>
+</html>
